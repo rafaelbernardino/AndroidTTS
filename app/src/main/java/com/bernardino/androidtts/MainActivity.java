@@ -84,8 +84,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
             }
             else {
                 Intent installTTSIntent = new Intent();
-                installTTSIntent.setAction(
-                        TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA);
+                installTTSIntent.setAction(TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA);
                 startActivity(installTTSIntent);
             }
         }
