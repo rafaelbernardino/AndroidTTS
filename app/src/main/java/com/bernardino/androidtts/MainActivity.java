@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         setContentView(R.layout.activity_main);
         Button btFalar = (Button)findViewById(R.id.btFalarId);
         btFalar.setOnClickListener(this);
-
         Intent checkTTSIntent = new Intent();
         checkTTSIntent.setAction(TextToSpeech.Engine.ACTION_CHECK_TTS_DATA);
         startActivityForResult(checkTTSIntent, REQUEST_TTS);
