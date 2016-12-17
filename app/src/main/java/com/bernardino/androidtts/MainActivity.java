@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         if (requestCode == REQUEST_TTS) {
             if (resultCode == TextToSpeech.Engine.CHECK_VOICE_DATA_PASS) {
                 tts = new TextToSpeech(this, this);
